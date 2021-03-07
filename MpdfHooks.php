@@ -43,7 +43,7 @@ class MpdfHooks {
 
 		$sidebar['TOOLBOX']['mpdf'] = [
 			'msg' => 'mpdf-action',
-			'href' => $title->getLocalUrl( [ 'action' => 'mpdf' ] ),
+			'href' => $title->getLocalUrl( [ 'action' => 'mpdf', 'useskin' => 'vector' ] ),
 			'id' => 't-mpdf',
 			'rel' => 'mpdf'
 		];
@@ -66,7 +66,7 @@ class MpdfHooks {
 			$actions['views']['mpdf'] = [
 				'class' => false,
 				'text' => wfMessage( 'mpdf-action' )->text(),
-				'href' => $skin->getTitle()->getLocalURL( "action=mpdf" ),
+				'href' => $skin->getTitle()->getLocalURL( "action=mpdf&useskin=vector" ),
 			];
 		}
 		return true;
@@ -95,7 +95,7 @@ class MpdfHooks {
 
 		$toolbox['mpdf'] = [
 			'msg' => 'mpdf-action',
-			'href' => $title->getLocalUrl( [ 'action' => 'mpdf' ] ),
+			'href' => $title->getLocalUrl( [ 'action' => 'mpdf', 'useskin' => 'vector' ] ),
 			'id' => 't-mpdf',
 			'rel' => 'mpdf'
 		];
